@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+    <title>De&Co_dificador</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="logoAlura">
+            <img src="./src/logoAlura.svg" alt="logo da alura" />
+        </div>
+        <div class="inputTextArea">
+            <textarea class="animated-textarea" id="inputText" cols="28" rows="5" wrap="hard" placeholder=""
+                name="textArea" id="textArea"></textarea>
+            <div class="buttonsArea">
+                <div class="atencao">
+                    <img src="./src/exclamacaoPoint.svg" alt="ponto de exclamação" />
+                    <p>Apenas letras minúsculas e sem acento.</p>
+                </div>
+                <div>
+                    <button onclick="codificaContent()" class="primaryButton">Criptografar</button>
+                    <button onclick="decodificaContent()" class="secundaryButton">Descriptografar</button>
+                </div>
+            </div>
+        </div>
+        <div class="panelTextArea">
+            
+                <span id="outputText" class="resultadoCod" ></span>
+            
+            <div id="contentOutput">
+                <div id="waitingText">
+                    <img class="float-image" src="./src/imgGirlLooking.svg" />
+                    <h3>Nenhuma mensagem encontrada</h3>
+                    <p>Digite um texto que você deseja criptografar ou discriptografar</p>
+                </div>
+                <div id="typingText">
+                    <img class="float-image" src="./src/Typing-pana.svg" />
+                    <h3>Você está digitando...</h3>
+                    <p>Mas Lembre-se! Use somente letras minúsclas e sem acento.</p>
+                </div>
+            </div>
+            <div>
+                <button id="copiButton" onClick="copyButton()" class="secundaryButton">Copiar</button>
+                <button id="clearButton" onclick="limpaPagina()"  class="clearButton">Limpar</button>
+            </div>
+        </div>
+    </div>
+    <script src="/script.js"></script>
+</body>
+
+</html>

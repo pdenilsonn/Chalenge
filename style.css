@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: 0;
+    font-family: sans-serif;
+}
+
+:root {
+    --backroung-color: #E9ECF8;
+    --background-color-2: #D8DFE8;
+    --background-color-3: #ffff;
+    --background-button-color: #0A3871;
+    --background-button-color-2: #D8DFE8;
+    --primary-text-color: #0A3871;
+    --secundary-text-color: #343A40;
+    --subs-text-color: #495057;
+}
+
+body {
+    background-color: var(--backroung-color);
+    
+
+}
+
+.container {
+    padding: 2rem 6rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+
+}
+
+.inputTextArea {
+    padding-top: 8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 2;
+    height: 100%;
+}
+
+.inputTextArea p {
+    color: var(--subs-text-color);
+}
+
+.inputTextArea textarea {
+    border: none;
+    background-color: var(--backroung-color);
+    color: var(--primary-color);
+    box-sizing: border-box;
+    font-size: 2rem;
+    height: 600px;
+    overflow: auto;
+    padding-right: 3rem;
+    padding-bottom: 2rem;
+}
+
+.inputTextArea textarea::placeholder {
+    color: var(--primary-text-color);
+    opacity: 70%;
+}
+
+.inputTextArea textarea:focus {
+    outline: none;
+}
+
+.inputTextArea .atencao {
+    display: flex;
+    flex-direction: row;
+    gap: 0.7rem;
+}
+
+.buttonsArea {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.primaryButton {
+    background-color: var(--background-button-color);
+    color: var(--background-button-color-2);
+    padding: 1rem 4rem;
+    font-size: 1.2rem;
+    border-radius: 1rem;
+    border: none;
+}
+
+.secundaryButton {
+    background-color: var(--background-button-color-2);
+    color: var(--secundary-color);
+    padding: 1rem 4rem;
+    font-size: 1.2rem;
+    border-radius: 1rem;
+    border: none;
+}
+
+
+.panelTextArea {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    text-align: center;
+    padding: 2rem;
+    height: 800px;
+    width: 400px;
+    border-radius: 2rem;
+
+    background-color: var(--background-color-3);
+    font-size: 1.2rem;
+    
+}
+
+.float-image {
+    animation: float 3s ease-in-out infinite;
+}
+
+#typingText{
+    display: none;
+}
+
+@keyframes float {
+    50% {
+        transform: translateY(-10px);
+    } 
+}
+
+.resultadoCod {
+    text-align: left;
+    color: var(--primary-text-color);
+}
+
+.panelTextArea h3 {
+    color: var(--secundary-text-color);
+    text-align: center;
+}
+
+.panelTextArea p {
+    color: var(--subs-text-color);
+    text-align: center;
+}
+
+.panelTextArea span {
+    max-width: 350px;
+    overflow-wrap: break-word;
+    overflow-y: auto;
+}
+
+#copiButton {
+    display: none;
+}
+
+#clearButton {
+    margin-top: 1rem; 
+    display: none;
+    background-color: var(--background-color);
+    border: solid 2px var(--background-button-color);
+    color: var(--secundary-color);
+    padding: 1rem 4rem;
+    font-size: 1.2rem;
+    border-radius: 1rem;
+    
+}
